@@ -3,15 +3,13 @@ import React from 'react'
 
 const App = () => {
   return (
-    <SafeAreaView style={containerStyle}>
+    <SafeAreaView style={styles.container}>
       <Button 
       color={"orange"}
       title="Click Me" onPress={() => Alert.prompt("My title", "My message", text => console.log(text))}/>
     </SafeAreaView>
   )
-};
-const containerStyle = {backgroundColor: "red"};
-
+}
 const styles = StyleSheet.create({
   container: {
   
@@ -20,8 +18,12 @@ const styles = StyleSheet.create({
   alignItems: "center",
   backgroundColor: "#fff",
   
+  },
+  icon: {
+    width: 300,
+    height:300,
+    
   }
-  
   
   })
 export default App
