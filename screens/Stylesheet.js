@@ -4,9 +4,9 @@ import React from 'react'
 const App = () => {
   return (
     <SafeAreaView style={styles.container}>
-     <View>
-      
-     </View>
+      <Button 
+      color={"black"}
+      title="Click Me" onPress={() => Alert.prompt("My title", "My message", text => console.log(text))}/>
     </SafeAreaView>
   )
 };
