@@ -1,6 +1,7 @@
-import { View, Text, Image , StyleSheet} from 'react-native'
-import React from 'react'
+import { View, Text, Image , StyleSheet} from 'react-native';
+import React from 'react';
 
+import colors from './config/colors';
 const App = () => {
   return (
     <View style={styles.container}>
@@ -21,13 +22,13 @@ const styles = StyleSheet.create({
     height:"100%",
   },
   container:{
-    backgroundColor:"#000",
+    backgroundColor:colors.black,
     flex:1,
   },
   closeIcon:{
     width:70,
     height:50,
-    backgroundColor:"red",
+    backgroundColor:colors.primary,
     position:"absolute",
     top:40,
     left:30,
@@ -35,7 +36,7 @@ const styles = StyleSheet.create({
   deleteIcon:{
     width:70,
     height:50,
-    backgroundColor:"yellow",
+    backgroundColor:colors.secondary,
     position:"absolute",
     top:40,
     right:30,
