@@ -2,7 +2,7 @@ import React from 'react';
 import { ImageBackground , StyleSheet, View, Image, Text} from 'react-native';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 
-function App(props) {
+function WelcomeScreen(props) {
   return (
     <ImageBackground 
     style={styles.background}
@@ -61,4 +61,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default App;
+export default WelcomeScreen;
