@@ -1,21 +1,16 @@
-import { View, Text , StyleSheet} from 'react-native'
+import { View, Text, StyleSheet } from 'react-native'
 import React from 'react'
-import Card from './components/Card'
-import AppText from './components/AppText'
-
+import ViewScreen from './screens/ViewScreen'
+import MessagesScreen from './screens/MessagesScreen'
 
 const App = () => {
   return (
     <View style={styles.container}>
-      <Card 
-        title="Red jacket for sale"
-        subTitle="$100"
-        image={require("./assets/jacket.jpg")}
-       />
+    <MessagesScreen/>
     </View>
   )
 }
 const styles = StyleSheet.create({
-  
+ 
 });
-export default App 
+export default App
