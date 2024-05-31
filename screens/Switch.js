@@ -3,14 +3,19 @@ import React, {useState} from 'react'
 import AppText from './components/AppText'
 import Screen from './components/Screen'
 import AppTextInput from './components/AppTextInput'
-import Picker from './components/Picker'
-import LoginScreen from './screens/LoginScreen'
 
 
 const App = () => {
+  const [isNew, setIsNew] = useState(false);
   
   return (
-    <LoginScreen/> 
+    <Screen>
+      <Switch 
+        value={isNew} 
+          onValueChange={ (newValue) => setIsNew(newValue)}
+
+          />
+    </Screen>    
   )
 }
 const styles = StyleSheet.create({
